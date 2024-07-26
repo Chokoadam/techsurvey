@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Technology Survey Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Technology Survey Form</h1>
+    <p id="description">This form serves to help us gain a better understanding of what technology our users are familiar with.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name" class="block-label">Name:
+          <input id="name" class="block-input" type="text" placeholder="Enter your name" required/>
+        </label>
+        <label id="email-label" for="email" class="block-label">Email:
+          <input id="email" class="block-input" type="email" placeholder="Enter your email" required/>
+        </label>
+        <label id="number-label" for="number" class="block-label">Age (optional):
+          <input id="number" class="block-input" type="number" min="13" max="120" placeholder="Enter your age" pattern="[a-z0-5]{8,}"/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Which option that best describes your experience with technology?
+          <select id="dropdown" name="dropdown">
+            <option value="">Select one</option>
+            <option value="1">No Experience</option>
+            <option value="2">Novice</option>
+            <option value="3">Intermediate</option>
+            <option value="4">Advanced</option>
+            <option value="5">Expert</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What is your most used technological device? (required)</legend>
+        <label for="phone"><input id="phone" type="radio" name="tech-owned" value="phone" checked>Phone</label>
+        <label for="tablet"><input id="tablet" type="radio" name="tech-owned" value="tablet">Tablet</label>
+        <label for="smart-watch"><input id="smart-watch" type="radio" name="tech-owned" value="smart-watch">Smart watch</label>
+        <label for="laptop"><input id="laptop" type="radio" name="tech-owned" value="laptop">Laptop</label>
+        <label for="pc"><input id="pc" type="radio" name="tech-owned" value="pc">PC</label>
+        <label for="neither"><input id="neither" type="radio" name="tech-owned" value="neither">Neither</label>
+      </fieldset>
+      <fieldset>
+        <legend>Check which of these tech terms you have heard before:</legend>
+        <label for="ai"><input id="ai" type="checkbox" name="tech-knowledge" value="ai">Artificial Intelligence</label>
+        <label for="bt"><input id="bt" type="checkbox" name="tech-knowledge" value="bt">Bluetooth</label>
+        <label for="bsod"><input id="bsod" type="checkbox" name="tech-knowledge" value="bsod">BSOD</label>
+        <label for="cpu"><input id="cpu" type="checkbox" name="tech-knowledge" value="cpu">CPU</label>
+        <label for="gpu"><input id="gpu" type="checkbox" name="tech-knowledge" value="gpu">GPU</label>
+        <label for="isp"><input id="isp" type="checkbox" name="tech-knowledge" value="isp">ISP</label>
+        <label for="ios"><input id="ios" type="checkbox" name="tech-knowledge" value="os">OS</label>
+        <label for="vr"><input id="vr" type="checkbox" name="tech-knowledge" value="vr">Virtual Reality</label>
+      </fieldset>
+      <fieldset>  
+        <label for="comments">Any comments or suggestions?
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>  
+      </fieldset> 
+      <input id="submit" type="submit" value="Submit">   
+    </form>   
+</body>  
+</html>
